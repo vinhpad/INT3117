@@ -36,13 +36,12 @@ public class Bill {
                     + DELTA_W[3] * CONFIG_W[3]
                     + (deltaW - DELTA_W[0] - DELTA_W[1] - DELTA_W[2] - DELTA_W[3]) * CONFIG_W[4];
 
-        System.out.println(DELTA_W[0] * CONFIG_W[0]
-                + " " + DELTA_W[1] * CONFIG_W[1]
-                + " " + DELTA_W[2] * CONFIG_W[2]
-                + " " + DELTA_W[3] * CONFIG_W[3]
-                + " " + DELTA_W[4] + CONFIG_W[4]
-                + " " +(deltaW - 400) * CONFIG_W[5]);
-        return  DELTA_W[0] * CONFIG_W[0] + DELTA_W[1] * CONFIG_W[1] + DELTA_W[2] * CONFIG_W[2] + DELTA_W[3] * CONFIG_W[3] + DELTA_W[4] * CONFIG_W[4]+ (deltaW - 400) * CONFIG_W[5];
+        return  DELTA_W[0] * CONFIG_W[0] 
+            + DELTA_W[1] * CONFIG_W[1] 
+            + DELTA_W[2] * CONFIG_W[2] 
+            + DELTA_W[3] * CONFIG_W[3] 
+            + DELTA_W[4] * CONFIG_W[4]
+            + (deltaW - 400) * CONFIG_W[5];
     }
 
     public static void main(String[] args) throws Exception {
